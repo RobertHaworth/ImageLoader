@@ -37,9 +37,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageViewHolder> implemen
     public void onBindViewHolder(ImageViewHolder holder, int position) {
         ImageSearchResult result = mDataSource.imageResults.get(position);
         holder.imageLabel.setText(result.title);
-//        holder.getItemView().setTag(position);
         holder.itemView.setTag(position);
-//        holder.imageURL = result.imageURL;
         Glide.with((Activity)mContext).load(result.thumbnailURL).into(holder.thumbnailImageView);
     }
 

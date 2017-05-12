@@ -51,10 +51,6 @@ public class MainActivity extends AppCompatActivity {
         imageRecyclerView.setAdapter(adapter);
 
 
-
-
-
-//        imageRecyclerView.setAdapter(adapter);
         queue = Volley.newRequestQueue(this);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,9 +86,4 @@ public class MainActivity extends AppCompatActivity {
         queue.add(request);
     }
 
-//    protected void showDetailActivity(String url) {
-//        Intent newIntent = new Intent(this, ImageActivity.class);
-//        newIntent.putExtra("url", url);
-//        startActivity(newIntent);
-//    }
 }
